@@ -5,9 +5,9 @@ from django.http import HttpResponse
 from django.http import JsonResponse
 
 def home_view(request):
-    return HttpResponse('<h1>Home Page<h1>')
+    return render(request, 'website/index.html')
 def about_viwe(request):
-    return HttpResponse('<h1>About Page<h1>')
+    return render(request,'website/about.html')
 def contact_viwe(request):
-    return HttpResponse('<h1>Contact Page<h1>')
+    return render(request,'website/contact.html')
 
